@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="136px" viewBox="0 0 144 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-96.000000, -60.000000)" fill="#FFFFFF">
+            <g id="Star" transform="translate(93.000000, 60.000000)">
+                <polygon points="75 112.5 30.9161061 135.676275 39.3353806 86.5881373 3.67076128 51.8237254 52.958053 44.6618627 75 0 97.041947 44.6618627 146.329239 51.8237254 110.664619 86.5881373 119.083894 135.676275"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
