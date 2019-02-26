@@ -12,7 +12,7 @@ $primary-font-color: white;
   padding: 0;
 }
 
-
+//main page
 body {
   font: 100% $font-stack;
   color: $primary-font-color;
@@ -113,5 +113,77 @@ footer {
     img:nth-child(1) {
       margin-top: 6px;
     }
+  }
+}//end main page
+
+
+//about page
+#brogrammers {
+  width: 80%;
+  margin: 10% 10% 0 10%;
+  @include mQ(800px) {
+    width: 95%;
+    margin: 10% 2.5% 0 2.5%;
+  }
+  h1 {
+    @include mQ(800px) {
+      text-align: center;
+    }
+  }
+  .bro {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    @include mQ(800px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      width: 20%;
+      height: 15vw;
+      border-radius: 10vw;
+      border: 1vw solid white;
+      @include mQ(800px) {
+        width: 40%;
+        height: 35vw;
+        border-radius: 20vw;
+      }
+    }
+    .name {
+      margin-left:  2vw;
+      width: 70%;
+    }
+    p {
+      font-size: 2vw;
+      @include mQ(800px){
+        font-size: 4vw;
+      }
+    }
+  }
+  h1 {
+    font-size: 4vw;
+  }
+}//end about page
+
+
+//reviews page
+#reviews {
+  h1 {
+    margin: 10% 0 0 10%;
+    font-size: 6vw;
+  }
+  .review {
+    margin: 10%;
+  }
+  p {
+    padding: 5px 0;
+    font-size: 3vw;
+    @include mQ(600px) {
+      font-size: 4vw;
+    }
+  }
+  img {
+    width: 4vw;
   }
 }
