@@ -1,5 +1,6 @@
 $font-stack: Helvetica, sans-serif;
 $primary-font-color: white;
+$hover-color: #f2e17f;
 
 @mixin mQ($arg){
   @media screen and (max-width: $arg){
@@ -47,7 +48,7 @@ nav {
     text-decoration: none;
     color: $primary-font-color;
     &:hover {
-      color: orange;
+      color: $hover-color;
     }
   }
 }
@@ -80,6 +81,7 @@ nav {
 #review {
   display: flex;
   justify-content: center;
+  margin-bottom: 15vw;
   .div {
     width: 80%;
   }
@@ -97,7 +99,6 @@ nav {
 }
 
 footer {
-  margin-top: 15vw;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   background-image: linear-gradient(black, rgba(0, 0, 0, 0.50), black), url("../assets/img/forest-footer.jpeg");
@@ -132,6 +133,9 @@ footer {
     @include mQ(800px) {
       text-align: center;
     }
+  }
+  .bro-3 {
+    margin-bottom: 15vw;
   }
   .bro {
     margin-top: 10%;
@@ -178,6 +182,10 @@ footer {
   }
   .review {
     margin: 10%;
+    border: 2px solid white;
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
   }
   p {
     padding: 5px 0;
@@ -188,5 +196,50 @@ footer {
   }
   img {
     width: 4vw;
+  }
+} //end of reviews page
+
+
+//blogs page starts here
+.blog-page {
+  background-image: url("../assets/img/moon2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  .blog-heading {
+    font-size: 6vw;
+    padding: 5% 0 0 10%;
+  }
+}
+.blog-post {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px white;
+  width: 80%;
+  margin: 5% 10%;
+  background-color: black;
+  .blog-date {
+    font-size: 1.5vw;
+    @include mQ(800px){
+      font-size: 2vw;
+    }
+  }
+  h3 {
+    font-size: 5vw;
+    padding: 10px;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  p {
+    font-size: 2vw;
+    padding: 5px 10px;
+    @include mQ(800px){
+      font-size: 3vw;
+    }
+  }
+  .hide:hover {
+    color: $hover-color;
   }
 }
