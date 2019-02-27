@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -59,12 +61,31 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: 'about.html'
+      filename: 'about.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/reviews.html',
-      filename: 'reviews.html'
-    })
+      filename: 'reviews.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/blog.html',
+      filename: 'blog.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
+    }),
+    new UglifyJsPlugin(),
+
+    new CleanWebpackPlugin(['dist'])
   ]
 
 };
