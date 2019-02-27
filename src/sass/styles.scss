@@ -100,6 +100,9 @@ footer {
   margin-top: 15vw;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.50), black), url("../assets/img/forest-footer.jpeg");
+  background-position: left center;
+  background-size: 100%;
   .social-media {
     height: 20vw;
     width: 40%;
